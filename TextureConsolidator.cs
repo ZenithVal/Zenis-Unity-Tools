@@ -1,4 +1,3 @@
-//Zenithval 2024
 //Tool for merging duplicate textures.
 //UI Found under Tools/ZenithVal/Texture Consolidator
 
@@ -84,6 +83,11 @@ public class TextureConsolidator : EditorWindow
             {
                 ReplaceDuplicatesWithMaster();
             }
+        }
+        if (textureMaterialsMap.Count == 0 && duplicateTextures.Count > 0)
+        {
+            GUILayout.Space(5);
+            GUILayout.Label("No materials found using duplicate textures.", EditorStyles.boldLabel);
         }
 
         GUILayout.Space(5);
