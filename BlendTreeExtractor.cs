@@ -1,3 +1,10 @@
+// ZenithVal 2026
+// Tool for extracting Blendtrees from an animator
+
+// Creates a folder next to the animator with the same name and contains the blendtrees.
+// Replaces the blendtrees in the animator with the extracted ones so they are no longer embedded in the animator asset.
+// Found under the context menu for animator assets (Select it then see 3 dots on inspector top right)
+
 using System.Collections.Generic;
 using System.IO;
 using UnityEditor;
